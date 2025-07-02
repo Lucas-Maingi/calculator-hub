@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Free Online Calculator Hub | BMI, Compound Interest, Age & Date Difference</title>
+    <meta name="description" content="Free online calculators: BMI, Compound Interest, Age, and Date Difference. Fast, mobile-friendly, and easy to use.">
+    <meta name="keywords" content="BMI calculator, Compound interest calculator, Age calculator, Date difference calculator, free calculators, online calculators, fast calculators, mobile-friendly calculators">
+    <meta name="author" content="Lucas Maingi">
+
+    <!-- Social Sharing (Open Graph Tags for Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Free Online Calculator Hub">
+    <meta property="og:description" content="Fast, free, mobile-friendly calculators: BMI, Compound Interest, Age, and Date Difference.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/calculator-hub/">
+    <!-- Optional: Add an image for sharing -->
+    <!-- <meta property="og:image" content="https://yourusername.github.io/calculator-hub/assets/preview-image.jpg"> -->
+
+    <!-- Twitter Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Online Calculator Hub">
+    <meta name="twitter:description" content="Fast, free, mobile-friendly calculators: BMI, Compound Interest, Age, and Date Difference.">
+    <!-- Optional: Add an image for Twitter sharing -->
+    <!-- <meta name="twitter:image" content="https://yourusername.github.io/calculator-hub/assets/preview-image.jpg"> -->
+
+    <!-- Favicon (Optional, add later if you wish) -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>Calculator Hub</h1> <!-- Website Brand Name -->
+        <p>Your all-in-one free calculator platform</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <div class="nav-wrapper">
+        <div class="nav-scroll">
+            <button onclick="showCalculator('bmi')">BMI Calculator</button>
+            <button onclick="showCalculator('compound')">Compound Interest</button>
+            <button onclick="showCalculator('age')">Age Calculator</button>
+            <button onclick="showCalculator('datediff')">Date Difference</button>
+        </div>
+    </div>
+
+    <!-- Main Calculator Area -->
+    <main>
+        <!-- BMI Calculator -->
+        <section id="bmi-calculator" class="calculator">
+            <h2>BMI Calculator</h2>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight">
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height">
+
+            <button id="calculateBtn">Calculate BMI</button>
+
+            <div id="result"></div>
+        </section>
+
+        <!-- Compound Interest Calculator -->
+        <section id="compound-calculator" class="calculator hidden">
+            <h2>Compound Interest Calculator</h2>
+
+            <label for="principal">Principal Amount ($):</label>
+            <input type="number" id="principal" placeholder="Enter principal amount">
+
+            <label for="rate">Annual Interest Rate (%):</label>
+            <input type="number" id="rate" placeholder="Enter interest rate">
+
+            <label for="time">Time (Years):</label>
+            <input type="number" id="time" placeholder="Enter time in years">
+
+            <label for="frequency">Compounds Per Year:</label>
+            <input type="number" id="frequency" placeholder="e.g., 12 for monthly">
+
+            <button id="compoundBtn">Calculate Compound Interest</button>
+
+            <div id="compoundResult"></div>
+        </section>
+
+        <!-- Age Calculator -->
+        <section id="age-calculator" class="calculator hidden">
+            <h2>Age Calculator</h2>
+
+            <label for="birthdate">Enter Your Birthdate:</label>
+            <input type="date" id="birthdate">
+
+            <button id="ageBtn">Calculate Age</button>
+
+            <div id="ageResult"></div>
+        </section>
+
+        <!-- Date Difference Calculator -->
+        <section id="datediff-calculator" class="calculator hidden">
+            <h2>Date Difference Calculator</h2>
+
+            <label for="startdate">Start Date:</label>
+            <input type="date" id="startdate">
+
+            <label for="enddate">End Date:</label>
+            <input type="date" id="enddate">
+
+            <button id="dateDiffBtn">Calculate Difference</button>
+
+            <div id="dateDiffResult"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Calculator Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="calculators/bmi.js"></script>
+    <script src="calculators/compound.js"></script>
+    <script src="calculators/age.js"></script>
+    <script src="calculators/datediff.js"></script>
+</body>
+</html>
